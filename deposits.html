@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- scripts -->
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script defer src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script defer src="./assets/js/deposits.js"></script>
+    <title>Alke Wallet</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-Primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html"><img class="logo" src="./assets/img/logo_nav.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active-text-white" href="./">Alke Wallet</a>
+              <a id="account_link" class="nav-link d-none" aria-current="page" href="./account.html">Cuenta</a>
+              <a class="nav-link" href="./contact.html">Contacto</a>
+            </div>
+          </div>
+          <div class="row">
+            <h5 class="col-1"></h5>
+            <a id="sign-in_link" class="nav-link text-white" href="./sign-in.html">Sig in</a>
+            <h5 class="text-white col-6" id="username"></h5>
+            <p id="clear_local" class="border mt-2 p-1 rounded-4 text-white d-none col-4 text-center">Log Out</p>
+          </div>
+      </nav>
+
+    <main class="content">
+        <section class="container w-50">
+            <h2 class="mt-5 text-center">Depositar</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Cuenta:</label>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">
+                            <select id="currency" class="form-select" aria-label="Default select example" required>
+                                <option selected>Selecciona una moneda</option>
+                                <option value="peso">Peso</option>
+                                <option value="dolar">Dolar</option>
+                                <option value="euro">Euro</option>
+                                <option value="uf">UF</option>
+                                <option value="utm">UTM</option>
+                            </select>
+                        </span>
+                        <input type="number" class="form-control" id="amount" name="amount" required
+                            placeholder="Monto a depositar">
+                    </div>
+                </div>
+                <div class="text-center">
+                    <button id="button" type="submit" class="btn btn-primary mt-2 ">Depositar</button>
+                </div>
+                <div class="text-center mt-3">
+                    <a href="./account.html">volver</a>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <div>
+                <img class="logo" src="../assets/img/logo_nav.png" alt="">
+            </div>
+            <div class="footer-left">
+                <h3>Alke Wallet</h3>
+                <p>Desarrollado por DcodeK &#174</p>
+            </div>
+            <div class="footer-right">
+                <h3>Síguenos</h3>
+                <ul class="social-media-icons">
+                    <li><a href="#"><i class="fab fa-whatsapp"><img src="../assets/img/whatsapp_icon.png"
+                                    alt=""></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook"><img src="../assets/img/facebook_icon.png"
+                                    alt=""></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"><img src="../assets/img/x_twitter_icon.png"
+                                    alt=""></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"><img src="../assets/img/instagram_icon.png"
+                                    alt=""></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

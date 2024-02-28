@@ -1,0 +1,87 @@
+/* base */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.logo {
+  color: white;
+  width: 50px;
+  text-decoration: none;
+}
+
+/* Navbar */
+nav {
+  background-color: #3542d5;
+  height: 60px;
+}
+
+.navbar-nav a {
+  color: white;
+}
+
+/* Footer */
+.footer {
+  background-color: #3542d5;
+  color: white;
+  height: 80px;
+  width: 100%;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer h3 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.social-media-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.social-media-icons img {
+  height: 30px;
+}
+
+.social-media-icons li {
+  margin-right: 10px;
+}
+
+.social-media-icons a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.social-media-icons a:hover {
+  color: #848cba;
+}
+
+/* Body */
+.content {
+  min-height: 100%;
+  padding-bottom: 20px;
+}
+
+.currencyTable {
+  text-align: start;
+}
