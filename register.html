@@ -32,8 +32,21 @@
           <a id="account_link" class="nav-link d-none" aria-current="page" href="./account.html">Cuenta</a>
           <a class="nav-link" href="./contact.html">Contacto</a>
         </div>
+        <div class="navbar-nav d-lg-none"> <!-- Agregado: Clase d-lg-none para ocultar en pantallas grandes -->
+          <a id="sign-in_link-1" class="nav-link text-white border rounded-4 text-center" href="./sign-in.html">Sig in</a>
+          <p id="clear_local-1" class="border mt-2 p-1 rounded-4 text-white d-none col-4 text-center">Log Out</p>
+        </div>
       </div>
+      <div class="row d-none d-md-flex px-3">
+        <h5 class="col-1"></h5>
+        <a id="sign-in_link-2" class="nav-link text-white border rounded-4 text-center p-1" href="./sign-in.html">Sig
+          in</a>
+        <h5 class="text-white col-6" id="username"></h5>
+        <p id="clear_local-2" class="border mt-2 p-1 rounded-4 text-white d-none col-4 text-center">Log Out</p>
+      </div>
+    </div>
   </nav>
+
   <header>
     <div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
       <div class="d-flex">
@@ -76,25 +89,25 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="footer-container">
-      <div>
-        <img class="logo" src="../assets/img/logo_nav.png" alt="">
+      <div class="footer-container justify-content-lg-evenly">
+        <div class="order-lg-1">
+          <img class="logo" src="../assets/img/logo_nav.png" alt="">
+        </div>
+        <div class="order-lg-3">
+          <h3>Alke Wallet</h3>
+          <p>Desarrollado por DcodeK &#174</p>
+        </div>
+        <div class="order-lg-2">
+          <h3>Síguenos</h3>
+          <ul class="social-media-icons">
+            <li><a href="#"><i class="fab fa-whatsapp"><img src="../assets/img/whatsapp_icon.png" alt=""></i></a></li>
+            <li><a href="#"><i class="fab fa-facebook"><img src="../assets/img/facebook_icon.png" alt=""></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"><img src="../assets/img/x_twitter_icon.png" alt=""></i></a></li>
+            <li><a href="#"><i class="fab fa-instagram"><img src="../assets/img/instagram_icon.png" alt=""></i></a></li>
+          </ul>
+        </div>
       </div>
-      <div class="footer-left">
-        <h3>Alke Wallet</h3>
-        <p>Desarrollado por DcodeK &#174</p>
-      </div>
-      <div class="footer-right">
-        <h3>Síguenos</h3>
-        <ul class="social-media-icons">
-          <li><a href="#"><i class="fab fa-whatsapp"><img src="../assets/img/whatsapp_icon.png" alt=""></i></a></li>
-          <li><a href="#"><i class="fab fa-facebook"><img src="../assets/img/facebook_icon.png" alt=""></i></a></li>
-          <li><a href="#"><i class="fab fa-twitter"><img src="../assets/img/x_twitter_icon.png" alt=""></i></a></li>
-          <li><a href="#"><i class="fab fa-instagram"><img src="../assets/img/instagram_icon.png" alt=""></i></a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
+    </footer>
 </body>
 
 </html>
