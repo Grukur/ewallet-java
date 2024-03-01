@@ -1,7 +1,13 @@
-
-/* Capturando los datos del form */
 $(document).ready(function () {
-  // Tu código jQuery aquí
+  const toastTrigger = document.getElementById('liveToastBtn')
+const toastLiveExample = document.getElementById('liveToast')
+
+if (toastTrigger) {
+  const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+  toastTrigger.addEventListener('click', () => {
+    toastBootstrap.show()
+  })
+}
 
 
   $('form').submit(function (event) {
@@ -17,9 +23,14 @@ $(document).ready(function () {
       $('#password_1').val('');
       $('#password_2').val('');
     } else {
-      $('#name').text(name); // Asignar el nombre de usuario al elemento h2
-      $('#lastName').text(lastName); // Asignar el nombre de usuario al elemento h2
-      window.location.href = '/index.html?name=' + encodeURIComponent(name) + '&lastName=' + encodeURIComponent(lastName);
+      let userData = {
+        "name": name,
+        "lastName": lastName,
+        "password": password
+      };
+      localStorage.setItem('usarData', JSON.stringify(userData))
+      
+      window.location.href = '/index.html'
     }
   });
 });

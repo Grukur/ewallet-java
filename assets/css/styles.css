@@ -85,3 +85,13 @@ nav {
 .currencyTable {
   text-align: start;
 }
+
+.custom-tooltip1{
+  --bs-tooltip-bg: blueviolet;
+  --bs-tooltip-color: white;
+}
+
+.custom-tooltip2{
+  --bs-tooltip-bg: orange;
+  --bs-tooltip-color: black;
+}

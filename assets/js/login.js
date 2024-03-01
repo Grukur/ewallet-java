@@ -1,8 +1,6 @@
-
-/* Capturando los datos del form */
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 $(document).ready(function () {
-  // Tu código jQuery aquí
-
 
   $('form').submit(function (event) {
     event.preventDefault();
@@ -11,7 +9,7 @@ $(document).ready(function () {
     let password = $('#password').val();
     console.log(name, password)
 
-    if(password === '222'){     
+    if(password === '222' && name === 'Darold'){     
       localStorage.setItem('name', name);
       localStorage.setItem('lastName', 'Trench');
       window.location.href = '/index.html';

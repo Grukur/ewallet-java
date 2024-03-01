@@ -34,7 +34,7 @@ $(document).ready(function () {
 
   let lastCurrency;
 
-  // comenzamos validaciones pre renderizado y renderizado
+  // comenzamos renderizado
   for (let i = 0; i < currencys.length; i++) {
     const currency = currencys[i];
     const history = depositHistoryFinals[currency];
