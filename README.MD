@@ -35,8 +35,6 @@ We use CDN for Bootstrap and JQuery
 
 <a href="https://www.youtube.com/watch?v=M0nlkc21yTw">Video</a>
 
-<div>
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=M0nlkc21yTw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
+
 
 
